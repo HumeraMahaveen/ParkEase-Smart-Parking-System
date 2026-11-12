@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: parkease-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: parkease-frontend
+  template:
+    metadata:
+      labels:
+        app: parkease-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: smart-parking-management-system-frontend:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5173

@@ -1,0 +1,25 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+}
+
+h1 {
+  color: #1e3a5f;
+  text-align: center;
+  margin-top: 100px;
+}
+
+p {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+}

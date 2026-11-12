@@ -1,0 +1,27 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: parkease-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: parkease-backend
+  template:
+    metadata:
+      labels:
+        app: parkease-backend
+    spec:
+      containers:
+        - name: backend
+          image: smart-parking-management-system-backend:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
+          envFrom:
+            - secretRef:
+                name: parkease-backend-env
+          env:
+            - name: PORT
+              value: "5000"

@@ -1,0 +1,137 @@
+
+.my-bookings-page {
+  min-height: 100vh;
+  padding: 35px;
+  background: #f3f5fa;
+  color: #000000;
+}
+
+.my-bookings-header,
+.my-bookings-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.my-bookings-header p {
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.my-bookings-header h1 {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #000000;
+}
+
+.my-bookings-header span,
+.my-bookings-heading p {
+  color: #000000;
+}
+
+.my-bookings-page button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #183456;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.my-bookings-page button:hover {
+  background: #102943;
+}
+
+.my-bookings-card {
+  padding: 25px;
+  margin-bottom: 25px;
+  background: #ffffff;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+  color: #000000;
+}
+
+.my-bookings-heading h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #000000;
+}
+
+.my-bookings-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.my-bookings-card table {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.my-bookings-card th,
+.my-bookings-card td {
+  padding: 15px 12px;
+  text-align: left;
+  border-bottom: 1px solid #edf0f5;
+  color: #000000;
+  font-size: 13px;
+}
+
+.my-bookings-card th {
+  background: #f6f8fb;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.booking-status {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.booking-status.booked {
+  color: #174d87;
+  background: #e2efff;
+}
+
+.booking-status.active {
+  color: #a3450b;
+  background: #fff0e5;
+}
+
+.booking-status.completed {
+  color: #006b4f;
+  background: #e0f7ef;
+}
+
+.booking-status.cancelled {
+  color: #a00000;
+  background: #ffe5e5;
+}
+
+.my-bookings-error {
+  color: #c00000;
+}
+
+@media (max-width: 600px) {
+  .my-bookings-page {
+    padding: 18px;
+  }
+
+  .my-bookings-header,
+  .my-bookings-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .my-bookings-card {
+    padding: 16px;
+  }
+}

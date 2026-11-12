@@ -1,0 +1,26 @@
+
+.admin-section {
+  min-height: 100vh;
+  padding: 50px;
+  background: #f3f5fa;
+  color: #172b4d;
+}
+
+.admin-section h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.admin-section p {
+  color: #718096;
+  margin-bottom: 25px;
+}
+
+.admin-section button {
+  background: #172f52;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
