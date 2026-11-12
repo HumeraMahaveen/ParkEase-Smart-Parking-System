@@ -162,7 +162,7 @@ The project also includes Docker and Kubernetes configuration files for containe
 
 ## Author
 
-**MD Humera Mahaveen**
+**Humera Mahaveen**
 
 GitHub: [HumeraMahaveen](https://github.com/HumeraMahaveen)
 
